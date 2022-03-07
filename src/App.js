@@ -2,22 +2,18 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+
+  const [book,setbook]= React.useState(1)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="items">
+      <span>Books : </span>
+
+      <button className='addbook'>+</button><button className='rembook'>-</button>
+
+      <span className='totalbooks'>{book}</span>
+      
     </div>
   );
 }
