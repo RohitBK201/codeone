@@ -4,13 +4,13 @@ import React from 'react';
 function App() {
 
 
-  const [book,setbook]= React.useState(13)
+  let [book,setbook]= React.useState(13)
 
-  const [pen,setpen] = React.useState(10)
+  let [pen,setpen] = React.useState(10)
 
-  const [notebook,setnotebook] = React.useState(44)
+  let [notebook,setnotebook] = React.useState(44)
 
-  const [inkpen,setinkpen] = React.useState(78)
+  let [inkpen,setinkpen] = React.useState(78)
 
   const changeb = (val) =>{
 
@@ -84,6 +84,8 @@ function App() {
       <span className='totalInkpens'>{inkpen}</span>
       
     </div>
+
+    <div className='total'>{book + pen +notebook +inkpen}</div>
    </div>
     
   );
